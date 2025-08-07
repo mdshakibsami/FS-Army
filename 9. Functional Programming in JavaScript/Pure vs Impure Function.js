@@ -53,10 +53,15 @@ function changeLimit() {
 changeLimit();
 console.log("Limit = ", limit);
 
-// pure
+// impure
 const arr = [1, 2, 3];
 function addNumber(arr, num) {
   arr.push(num);
+}
+// pure
+function addNumber(arr, num) {
+  arr = [...arr, num];
+  return arr;
 }
 
 // impure
