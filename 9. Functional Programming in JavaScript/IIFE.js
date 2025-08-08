@@ -44,3 +44,5 @@ const counter = (function () {
 console.log(counter.increment()); // 1
 console.log(counter.get()); // 1
 console.log(counter.count); // undefined (private)
+
+
